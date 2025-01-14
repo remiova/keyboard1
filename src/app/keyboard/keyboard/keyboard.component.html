@@ -1,0 +1,113 @@
+<div class="border" [class.darktheme]="isthemelight">
+    <div class="texts" (ondbclick)="showkeyboard()">
+        <!-- place holder !! -->
+        {{current}}
+    </div>
+    <div class="keyboard" [class.hidden]="iskeyboardvisible" [class.darktheme]="isthemelight">
+        <div class="line1" [class.darktheme]="isthemelight" [class.hidden]="!isbuttonsvisible">
+            <button (click)="sentence('1')">1</button>
+            <button (click)="sentence('2')">2</button>
+            <button (click)="sentence('3')">3</button>
+            <button (click)="sentence('4')">4</button>
+            <button (click)="sentence('5')">5</button>
+            <button (click)="sentence('6')">6</button>
+            <button (click)="sentence('7')">7</button>
+            <button (click)="sentence('8')">8</button>
+            <button (click)="sentence('9')">9</button>
+            <button (click)="sentence('0')">0</button>
+
+        </div>
+        <div class="line2" [class.hidden]="!isbuttonsvisible">
+            <button (click)="sentence('Q')">Q</button>
+            <button (click)="sentence('W')">W</button>
+            <button (click)="sentence('E')">E</button>
+            <button (click)="sentence('R')">R</button>
+            <button (click)="sentence('T')">T</button>
+            <button (click)="sentence('Y')">Y</button>
+            <button (click)="sentence('U')">U</button>
+            <button (click)="sentence('I')">I</button>
+            <button (click)="sentence('O')">O</button>
+            <button (click)="sentence('P')">P</button>
+            <button (click)="backspace('')">←</button>
+        </div>
+        <div class="line3" [class.hidden]="!isbuttonsvisible">
+            <button (click)="sentence('A')">A</button>
+            <button (click)="sentence('S')">S</button>
+            <button (click)="sentence('D')">D</button>
+            <button (click)="sentence('F')">F</button>
+            <button (click)="sentence('G')">G</button>
+            <button (click)="sentence('H')">H</button>
+            <button (click)="sentence('J')">J</button>
+            <button (click)="sentence('K')">K</button>
+            <button (click)="sentence('L')">L</button>
+            <button (click)="sentence('')" class="enter">↲</button>
+        </div>
+        <div class="line4" [class.hidden]="!isbuttonsvisible">
+            <button (click)="sentence('Z')">z</button>
+            <button (click)="sentence('X')">X</button>
+            <button (click)="sentence('C')">C</button>
+            <button (click)="sentence('V')">V</button>
+            <button (click)="sentence('B')">B</button>
+            <button (click)="sentence('N')">N</button>
+            <button (click)="sentence('M')">M</button>
+            <button (cLick)="sentence(',')">,</button>
+            <button (click)="sentence(' ')" class="shift">shift</button>
+        </div>
+        <div class="keyboard">
+            <ul class="line1" [class.hidden]="isbuttonsvisible" class="ul">
+                <button (click)="sentence('😀')">😀</button>
+                <button (click)="sentence('😂')">😂</button>
+                <button (click)="sentence(' ')">😍</button>
+                <button (click)="sentence(' ')">😅</button>
+                <button (click)="sentence(' ')">😑</button>
+                <button (click)="sentence(' ')">😤</button>
+                <button (click)="sentence(' ')">😡</button>
+                <button (click)="sentence(' ')">👹</button>
+                <button (click)="sentence(' ')">😵</button>
+                <button (click)="backspace('')">←</button>
+            </ul>
+            <ul class="line2" [class.hidden]="isbuttonsvisible" class="ul">
+                <button (click)="sentence('')">🎆</button>
+                <button (click)="sentence('')">🎨</button>
+                <button (click)="sentence('')">🎀</button>
+                <button (click)="sentence('')">🎇</button>
+                <button (click)="sentence(' ')">⚽</button>
+                <button (click)="sentence(' ')">🎢</button>
+                <button (click)="sentence(' ')">🔊</button>
+                <button (click)="sentence('')">🎭</button>
+                <button (click)="sentence(' ')">🎠</button>
+                <button (click)="sentence(' ')">🎈</button>
+            </ul>
+            <ul class="line3" [class.hidden]="isbuttonsvisible" class="ul">
+                <button (click)="sentence('')">♥</button>
+                <button (click)="sentence('')">🧡</button>
+                <button (click)="sentence(' ')">💚</button>
+                <button (click)="sentence(' ')">💙</button>
+                <button (click)="sentence(' ')">💜</button>
+                <button (click)="sentence(' ')">💕</button>
+                <button (click)="sentence(' ')">🤎</button>
+                <button (click)="sentence(' ')">🖤</button>
+                <button (click)="sentence(' ')">💗</button>
+                <button (click)="sentence(' ')">💔</button>
+            </ul>
+            <ul class="line1" [class.hidden]="isbuttonsvisible" class="ul">
+                <button (click)="sentence('😀')">👩</button>
+                <button (click)="sentence('😂')">👨</button>
+                <button (click)="sentence(' ')">👦</button>
+                <button (click)="sentence(' ')">👶</button>
+                <button (click)="sentence(' ')">👵</button>
+                <button (click)="sentence(' ')">🎅</button>
+                <button (click)="sentence(' ')">👩‍🦲</button>
+                <button (click)="sentence(' ')">👼</button>
+                <button (click)="sentence(' ')">👩‍💻</button>
+                <button (click)="backspace(' ')">👨‍💻</button>
+            </ul>
+        </div>
+        <div class="line5">
+            <button>Ctrl</button>
+            <button (click)="sentence('  ')" class="space" [class.darktheme]="isthemelight">space</button>
+            <button (click)="themes()">{{change}}</button>
+            <button (click)="shownewbuttons()">😊</button>
+        </div>
+    </div>
+</div>
