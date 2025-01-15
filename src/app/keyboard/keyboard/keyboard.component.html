@@ -28,7 +28,7 @@
             <button (click)="sentence('I')">I</button>
             <button (click)="sentence('O')">O</button>
             <button (click)="sentence('P')">P</button>
-            <button (click)="backspace('')">←</button>
+            <button (click)="backspace('')" class="bs">←</button>
         </div>
         <div class="line3" [class.hidden]="!isbuttonsvisible">
             <button (click)="sentence('A')">A</button>
@@ -42,7 +42,7 @@
             <button (click)="sentence('L')">L</button>
             <button (click)="sentence('')" class="enter">↲</button>
         </div>
-        <div class="line4" [class.hidden]="!isbuttonsvisible">
+        <div class="line4"  [class.hidden]="!isbuttonsvisible">
             <button (click)="sentence('Z')">z</button>
             <button (click)="sentence('X')">X</button>
             <button (click)="sentence('C')">C</button>
@@ -54,7 +54,7 @@
             <button (click)="sentence(' ')" class="shift">shift</button>
         </div>
         <div class="keyboard">
-            <ul class="line1" [class.hidden]="isbuttonsvisible" class="ul">
+            <ul class="line1"  [class.hidden]="isbuttonsvisible" class="ul">
                 <button (click)="sentence('😀')">😀</button>
                 <button (click)="sentence('😂')">😂</button>
                 <button (click)="sentence(' ')">😍</button>
@@ -66,7 +66,7 @@
                 <button (click)="sentence(' ')">😵</button>
                 <button (click)="backspace('')">←</button>
             </ul>
-            <ul class="line2" [class.hidden]="isbuttonsvisible" class="ul">
+            <ul class="line2 "[class.hidden]="isbuttonsvisible" class="ul">
                 <button (click)="sentence('')">🎆</button>
                 <button (click)="sentence('')">🎨</button>
                 <button (click)="sentence('')">🎀</button>
@@ -78,7 +78,7 @@
                 <button (click)="sentence(' ')">🎠</button>
                 <button (click)="sentence(' ')">🎈</button>
             </ul>
-            <ul class="line3" [class.hidden]="isbuttonsvisible" class="ul">
+            <ul class="line3"  [class.hidden]="isbuttonsvisible" class="ul">
                 <button (click)="sentence('')">♥</button>
                 <button (click)="sentence('')">🧡</button>
                 <button (click)="sentence(' ')">💚</button>
@@ -90,7 +90,7 @@
                 <button (click)="sentence(' ')">💗</button>
                 <button (click)="sentence(' ')">💔</button>
             </ul>
-            <ul class="line1" [class.hidden]="isbuttonsvisible" class="ul">
+            <ul class="line1"[class.hidden]="isbuttonsvisible" class="ul">
                 <button (click)="sentence('😀')">👩</button>
                 <button (click)="sentence('😂')">👨</button>
                 <button (click)="sentence(' ')">👦</button>
